@@ -1,0 +1,14 @@
+DATA:
+  BATCH_SIZE: 64
+MODEL:
+  TYPE: slide_swin
+  NAME: slide_swin_base
+  DROP_PATH_RATE: 0.5
+  SWIN:
+    EMBED_DIM: 128
+    DEPTHS: [ 2, 2, 18, 2 ]
+    NUM_HEADS: [ 4, 8, 16, 32 ]
+    WINDOW_SIZE: 56
+  SLIDE:
+    KA: 3
+    NUM_SLIDE_STAGES: 2
