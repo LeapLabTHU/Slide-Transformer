@@ -88,13 +88,11 @@ _C.MODEL.SWIN_LRVIT = CN(new_allowed=True)
 _C.MODEL.PVD = CN(new_allowed=True)
 
 # -----------------------------------------------------------------------------
-# Agent Attention options
+# Slide Transformer options
 # -----------------------------------------------------------------------------
-_C.MODEL.AGENT = CN()
-_C.MODEL.AGENT.NUM = '9-16-49-49'
-_C.MODEL.AGENT.ATTN_TYPE = 'BBBB'
-_C.MODEL.AGENT.PVT_LA_SR_RATIOS = 1111
-_C.MODEL.AGENT.CSWIN_LA_SPLIT_SIZE = '56-28-14-7'
+_C.MODEL.SLIDE = CN()
+_C.MODEL.SLIDE.KA = 3
+_C.MODEL.SLIDE.NUM_SLIDE_STAGES = 2
 
 # -----------------------------------------------------------------------------
 # Training settings
